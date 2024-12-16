@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Refresh Drinks</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #92a7e5;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a.active {
+            color: rgb(243, 247, 253);
+            border-bottom: 2px solid yellow;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+        }
+
+        .gallery h2 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .back-to-home {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #92a7e5;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .back-to-home:hover {
+            background-color: #809ad5;
+        }
+
+        footer {
+            background-color: #92a7e5;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html" class="active">Gallery</a>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <h2>Gallery Produk Kami</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="citrus.jpg" alt="Citrus Cooler">
+                <p><strong>Citrus Cooler</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="tropical.jpg" alt="Tropical Splash">
+                <p><strong>Tropical Splash</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="berry.jpg" alt="Berry Bliss">
+                <p><strong>Berry Bliss</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="minty.jpg" alt="Minty Fresh">
+                <p><strong>Minty Fresh</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="apple.jpg" alt="Apple Chill">
+                <p><strong>Apple Chill</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="peach.jpg" alt="Peach Paradise">
+                <p><strong>Peach Paradise</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="watermelon.jpg" alt="Watermelon Wave">
+                <p><strong>Watermelon Wave</strong></p>
+            </div>
+            <div class="gallery-item">
+                <img src="stobery.jpg" alt="Strawberry Sparkle">
+                <p><strong>Strawberry Sparkle</strong></p>
+            </div>
+        </div>
+        <!-- Tombol kembali ke halaman utama -->
+        <a href="index.html" class="back-to-home">Kembali ke Halaman Utama</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Refresh Drinks. All rights reserved.</p>
+    </footer>
+</body>
+</html>
